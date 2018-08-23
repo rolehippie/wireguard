@@ -1,0 +1,7 @@
+wireguard_interface: wg0
+wireguard_port: 51820
+wireguard_ip:
+wireguard_netmask: 32
+wireguard_private:
+wireguard_public:
+wireguard_peers: []
