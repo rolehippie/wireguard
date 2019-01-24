@@ -1,11 +1,11 @@
 [Interface]
 Address = {{ wireguard_ip }}
-PrivateKey = {{ wireguard_private }}
+PrivateKey = {{ wireguard_private | trim }}
 ListenPort = {{ wireguard_port }}
 {% for host in wireguard_peers | sort %}{% if host != inventory_hostname %}
 
-[Peer]
-PublicKey = {{ hostvars[host]["wireguard_public"] }}
+[Peer] # {{ host }}
+PublicKey = {{ hostvars[host]["wireguard_public"] | trim }}
 AllowedIps = {{ hostvars[host]["wireguard_ip"] }}/{{ hostvars[host]["wireguard_netmask"] | default(wireguard_netmask) }}
 Endpoint = {{ hostvars[host]["ansible_default_ipv4"]["address"] }}:{{ hostvars[host]["wireguard_port"] | default(wireguard_port) }}
 {% endif %}{% endfor %}
