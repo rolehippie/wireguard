@@ -1,7 +1,32 @@
+# Standards: 0.1
+---
+# @var wireguard_interface:description: Interface to define
 wireguard_interface: wg0
+
+# @var wireguard_port:description: Port for peer communication
 wireguard_port: 51820
+
+# @var wireguard_ip:description: IP address of the current host
 wireguard_ip:
+
+# @var wireguard_netmask:description: Netmask for the IP address
 wireguard_netmask: 32
+
+# @var wireguard_private:description: Private key for the current host
 wireguard_private:
+
+# @var wireguard_public:description: Public key for the current host
 wireguard_public:
+
+# @var wireguard_peers:description: List of peers based on inventory name
+# @var wireguard_peers:example: >
+# wireguard_peers:
+#   - node1
+#   - node2
+#   - node3
+#   - node4
+#   - node5
+# @end
 wireguard_peers: []
+
+...

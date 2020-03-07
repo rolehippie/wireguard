@@ -1,0 +1,9 @@
+---
+- name: Converge
+  hosts: all
+  vars:
+    wireguard_ip: 10.13.37.10
+    wireguard_private: qHXKbqEIIKCbztA5P+2S1RSPoObLy6DR26pHAUpXqXI=
+    wireguard_public: kSJIXieQ3BKSanF5bDmyIL6hcxZX4Ejx5rY3AoF9ECE=
+  roles:
+    - role: wireguard
