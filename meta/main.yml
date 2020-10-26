@@ -28,8 +28,8 @@ galaxy_info:
         - bionic
         - focal
   galaxy_tags:
-  - wireguard
-  - vpn
+    - wireguard
+    - vpn
 
 dependencies: []
 
