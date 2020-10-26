@@ -1,7 +1,24 @@
+# Standards: 1.2
+---
+# @var wireguard_interface:description: Interface to define
 wireguard_interface: wg0
+
+# @var wireguard_port:description: Port to bind to
 wireguard_port: 51820
+
+# @var wireguard_ip:description: IP address of the wireguard node
 wireguard_ip:
+
+# @var wireguard_netmask:description: Netmask of the wireguard node
 wireguard_netmask: 32
+
+# @var wireguard_private:description: Private encryption key
 wireguard_private:
+
+# @var wireguard_public:description: Public encryption key
 wireguard_public:
+
+# @var wireguard_peers:description: List of peers to connect to
 wireguard_peers: []
+
+...

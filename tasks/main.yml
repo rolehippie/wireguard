@@ -1,28 +1,21 @@
-- name: init repo
-  apt_repository:
-    repo: ppa:wireguard/wireguard
-    filename: wireguard
-    update_cache: yes
-    state: present
-  tags:
-    - wireguard
-
-- name: install packages
+# Standards: 1.2
+---
+- name: Install required packages
   with_items:
     - bridge-utils
-    - openresolv
     - linux-headers-generic
     - wireguard-dkms
     - wireguard-tools
+    - wireguard
   package:
     name: '{{ item }}'
     state: present
   tags:
     - wireguard
 
-- name: write config
+- name: Write config file
   notify:
-    - restart wireguard
+    - Restart wireguard
   template:
     src: config.j2
     dest: /etc/wireguard/{{ wireguard_interface }}.conf
@@ -30,7 +23,7 @@
   tags:
     - wireguard
 
-- name: start service
+- name: Start wireguard service
   systemd:
     name: wg-quick@{{ wireguard_interface }}
     state: started
@@ -39,3 +32,5 @@
     enabled: yes
   tags:
     - wireguard
+
+...
