@@ -15,7 +15,3 @@ def test_running_and_enabled(host):
     svc = host.service("wg-quick@wg0")
     assert svc.is_running
     assert svc.is_enabled
-
-
-def test_server_socket(host):
-    assert host.socket("tcp://0.0.0.0:51820").is_listening
