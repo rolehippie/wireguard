@@ -1,5 +1,9 @@
-- name: restart wireguard
+# Standards: 1.2
+---
+- name: Restart wireguard
   systemd:
     name: wg-quick@{{ wireguard_interface }}
     state: restarted
     daemon_reload: yes
+
+...

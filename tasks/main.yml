@@ -1,4 +1,6 @@
-- name: init repo
+# Standards: 1.2
+---
+- name: Add ppa repository
   apt_repository:
     repo: ppa:wireguard/wireguard
     filename: wireguard
@@ -7,7 +9,7 @@
   tags:
     - wireguard
 
-- name: install packages
+- name: Install required packages
   with_items:
     - bridge-utils
     - openresolv
@@ -20,7 +22,7 @@
   tags:
     - wireguard
 
-- name: write config
+- name: Write config file
   notify:
     - restart wireguard
   template:
@@ -30,7 +32,7 @@
   tags:
     - wireguard
 
-- name: start service
+- name: Start wireguard service
   systemd:
     name: wg-quick@{{ wireguard_interface }}
     state: started
@@ -39,3 +41,5 @@
     enabled: yes
   tags:
     - wireguard
+
+...
