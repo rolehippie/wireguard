@@ -1,21 +1,12 @@
 # Standards: 1.2
 ---
-- name: Add ppa repository
-  apt_repository:
-    repo: ppa:wireguard/wireguard
-    filename: wireguard
-    update_cache: yes
-    state: present
-  tags:
-    - wireguard
-
 - name: Install required packages
   with_items:
     - bridge-utils
-    - openresolv
     - linux-headers-generic
     - wireguard-dkms
     - wireguard-tools
+    - wireguard
   package:
     name: '{{ item }}'
     state: present
