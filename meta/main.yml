@@ -7,7 +7,7 @@
 # [![Readme Workflow](https://github.com/rolehippie/wireguard/actions/workflows/readme.yml/badge.svg)](https://github.com/rolehippie/wireguard/actions/workflows/readme.yml)
 # [![Galaxy Workflow](https://github.com/rolehippie/wireguard/actions/workflows/galaxy.yml/badge.svg)](https://github.com/rolehippie/wireguard/actions/workflows/galaxy.yml)
 # [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/wireguard)](https://github.com/rolehippie/wireguard/blob/master/LICENSE)
-# ![Ansible Role](https://img.shields.io/ansible/role/51444)
+# [![Ansible Role](https://img.shields.io/ansible/role/51444)](https://galaxy.ansible.com/rolehippie/wireguard)
 #
 # Ansible role to install and configure wireguard VPN.
 #
