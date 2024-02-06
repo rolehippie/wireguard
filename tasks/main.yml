@@ -1,4 +1,3 @@
-# Standards: 1.2
 ---
 - name: Install required packages
   with_items:
@@ -7,7 +6,7 @@
     - wireguard-dkms
     - wireguard-tools
     - wireguard
-  package:
+  ansible.builtin.package:
     name: '{{ item }}'
     state: present
   tags:
@@ -16,7 +15,7 @@
 - name: Write config file
   notify:
     - Restart wireguard
-  template:
+  ansible.builtin.template:
     src: config.j2
     dest: /etc/wireguard/{{ wireguard_interface }}.conf
     mode: u=rw,g=,o=
@@ -24,7 +23,7 @@
     - wireguard
 
 - name: Start wireguard service
-  systemd:
+  ansible.builtin.systemd:
     name: wg-quick@{{ wireguard_interface }}
     state: started
     daemon_reload: yes
