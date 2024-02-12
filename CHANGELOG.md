@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.0.0](https://github.com/rolehippie/wireguard/compare/v1.0.0...v2.0.0) (2024-02-12)
+
+
+### Features
+
+* drop support for ubuntu 18.04 ([6046b21](https://github.com/rolehippie/wireguard/commit/6046b21ee693c42fd1d82741e7f2bb13727fe5fc))
+* used full qualified collection names ([c0cede1](https://github.com/rolehippie/wireguard/commit/c0cede1d829351e88bf42ea5dc51cc14aa1c1125))
+
 ## 1.0.0 (2023-01-04)
 
 
