@@ -1,4 +1,12 @@
 ---
+# @var wireguard_packages:description: List of packages to install
+wireguard_packages:
+  - bridge-utils
+  - linux-headers-generic
+  - wireguard-tools
+  - wireguard
+  - "{{ 'wireguard-dkms' if ansible_distribution_version is version('24.04', '<') else omit }}"
+
 # @var wireguard_interface:description: Interface to define
 wireguard_interface: wg0
 
