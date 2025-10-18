@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/rolehippie/wireguard/compare/v2.0.0...v2.1.0) (2025-10-18)
+
+
+### Features
+
+* apply new repo structure and update linting ([9430d97](https://github.com/rolehippie/wireguard/commit/9430d976aab7b12bb5d8848009a918affe106334))
+
 ## [2.0.0](https://github.com/rolehippie/wireguard/compare/v1.0.0...v2.0.0) (2024-02-12)
 
 
