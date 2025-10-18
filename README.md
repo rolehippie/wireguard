@@ -20,6 +20,7 @@ Building and improving this Ansible role have been sponsored by my current and p
   - [wireguard_interface](#wireguard_interface)
   - [wireguard_ip](#wireguard_ip)
   - [wireguard_netmask](#wireguard_netmask)
+  - [wireguard_packages](#wireguard_packages)
   - [wireguard_peers](#wireguard_peers)
   - [wireguard_port](#wireguard_port)
   - [wireguard_private](#wireguard_private)
@@ -65,6 +66,22 @@ Netmask of the wireguard node
 
 ```YAML
 wireguard_netmask: 32
+```
+
+### wireguard_packages
+
+List of packages to install
+
+#### Default value
+
+```YAML
+wireguard_packages:
+  - bridge-utils
+  - linux-headers-generic
+  - wireguard-tools
+  - wireguard
+  - "{{ 'wireguard-dkms' if ansible_distribution_version is version('24.04', '<')
+    else omit }}"
 ```
 
 ### wireguard_peers
