@@ -80,8 +80,7 @@ wireguard_packages:
   - linux-headers-generic
   - wireguard-tools
   - wireguard
-  - "{{ 'wireguard-dkms' if ansible_distribution_version is version('24.04', '<')
-    else omit }}"
+  - "{{ 'wireguard-dkms' if ansible_distribution_version is version('24.04', '<') else omit }}"
 ```
 
 ### wireguard_peers
