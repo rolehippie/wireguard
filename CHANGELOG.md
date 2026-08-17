@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.4.0](https://github.com/rolehippie/wireguard/compare/v2.3.0...v2.4.0) (2026-08-17)
+
+### Dependencies
+
+* **minor:** update dependency pipx:ansible-lint to v26.8.0 ([#56](https://github.com/rolehippie/wireguard/issues/56)) ([5b891b8](https://github.com/rolehippie/wireguard/commit/5b891b8d2e7049c9f56f82485767b015b2fb6b94))
+* **minor:** update dependency pipx:molecule to v26.8.0 ([#57](https://github.com/rolehippie/wireguard/issues/57)) ([90437be](https://github.com/rolehippie/wireguard/commit/90437be1ff8dce09890647aa11303e488c28971e))
+* **patch:** update dependency pipx:ansible-core to v2.21.3 ([#54](https://github.com/rolehippie/wireguard/issues/54)) ([0079906](https://github.com/rolehippie/wireguard/commit/007990697b53f1bd7610fe1c0ff0f5f63cfa52fd))
+* **patch:** update dependency pre-commit to v4.6.2 ([#55](https://github.com/rolehippie/wireguard/issues/55)) ([a7b49ed](https://github.com/rolehippie/wireguard/commit/a7b49ed19bc819ef4d80bc8cda3ebb75038e772c))
+
 ## [2.3.0](https://github.com/rolehippie/wireguard/compare/v2.2.0...v2.3.0) (2026-08-10)
 
 ### Dependencies
