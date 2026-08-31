@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.4.1](https://github.com/rolehippie/wireguard/compare/v2.4.0...v2.4.1) (2026-08-31)
+
+### Dependencies
+
+* **patch:** update dependency pipx:ansible-doctor to v8.4.1 ([#58](https://github.com/rolehippie/wireguard/issues/58)) ([39b90d6](https://github.com/rolehippie/wireguard/commit/39b90d6ba5cd04ac1b531bdcb332b7f70b347ce3))
+
 ## [2.4.0](https://github.com/rolehippie/wireguard/compare/v2.3.0...v2.4.0) (2026-08-17)
 
 ### Dependencies
