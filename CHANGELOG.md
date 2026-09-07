@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.0](https://github.com/rolehippie/wireguard/compare/v2.4.1...v2.5.0) (2026-09-07)
+
+### Features
+
+* add separate requirements for molecule run ([7badda7](https://github.com/rolehippie/wireguard/commit/7badda7904217cdaf0fd961069a2da7b6293db67))
+* use new required facts as attributes ([c51aa12](https://github.com/rolehippie/wireguard/commit/c51aa12e367932272cb8486bf0cb9a02ae101bde))
+
 ## [2.4.1](https://github.com/rolehippie/wireguard/compare/v2.4.0...v2.4.1) (2026-08-31)
 
 ### Dependencies
